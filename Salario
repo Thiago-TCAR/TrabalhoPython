@@ -1,0 +1,20 @@
+valor = int(input("Quanto voce ganha por hora: "))
+horas = int(input("Numero de horas trabalhadas no mes: ")) #Entrada de salario por horas trabalhadas e total de horas trabalhadas por mes
+
+salariobruto = valor * horas #Calculo para salario bruto
+
+ir = (11/100.0 * salariobruto)
+print ("Imposto de renda: ",ir) # calculo para desconto de imposto de renda (11%) no salario bruto
+
+inss = (8/100.0 * salariobruto)
+print ("INSS: ",inss) #Calculo para desconto de INSS (8%) no salario bruto
+
+sind = (5/100.0 * salariobruto)
+print ("Sindicato: ",sind) #Calculo para desconto do sindicato (5%) em cima do salario bruto
+
+desc = ir + inss + sind #Soma de todos os descontos
+salarioLiquido = salariobruto - desc #Soma de todos os descontos menos salario bruto. para obter o salario liquido
+
+print("\nSeu salario bruto e R$",salariobruto)
+print("O desconto no seu salario foi de R$", desc)
+print("Salario liquido restou", salarioLiquido) #Todas informaçoes sendo mostradas
