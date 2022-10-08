@@ -1,0 +1,27 @@
+print("Saque disponivel entre R$10 e R$600 reais")
+valor = int(input("Digite o valor para saque ")) #Entrada de valor solicitado com descrição dos limite
+
+if valor >= 10 and valor <= 600: #Condição para saber se o valor solicitado e valido
+
+    cem = int(valor / 100)
+    valor = valor % 100 #Pego o valor solicitado e divido por 100. para saber quantas notas de 100 serao necessarias. o resto da divisao passa para proxima nota
+
+    cinquenta = int(valor / 50)
+    valor = valor % 50 #Pego o resto da divisao e divido por 50. Para saber quantas notas de 50 serao necessarias. o resto da divisao passa para proxima nota
+
+    dez = int(valor / 10)
+    valor = valor % 10 #Pego o resto da divisao e divido por 10. o resto da divisao passo pra proxima nota
+
+    cinco = int(valor / 5)
+    valor = valor % 5 #Pego o resto da divisao e divido por 5. O resto da divisao passa pra proxima nota
+
+    um = valor #O resto de todas as divisoes de outras notas
+
+    print("\nNotas de R$100: ",cem)
+    print("Notas de R$50: ",cinquenta)
+    print("Notas de R$10: ",dez)
+    print("Notas de R$5: ",cinco)
+    print("Notas de R$1:",um)
+
+else:
+    print("O valor solicitado não e permitido") #Condiçao caso o valor solicitacao nao seja permitido
