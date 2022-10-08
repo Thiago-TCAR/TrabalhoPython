@@ -1,0 +1,14 @@
+idade = []
+altura = [] #Criação de duas listas. uma para armazenar idades e outra alturas
+
+for valor in range(0, 5):
+    idade.append(int(input("Digite a idade: ")))
+    altura.append(float(input("Digite a altura: "))) #Repetição for 5 vezes para 5 alturas e 5 idades
+
+print("Ordem inversa das idades: ")
+for valor in range(0, 5):
+    print(idade[len(idade)-1-valor]) #Imprimindo a lista idade na ordem inversa da digitada
+
+print("Ordem inversa das alturas: ")
+for valor in range(0, 5):
+    print(altura[len(altura)-1-valor]) #Imprimindo a lista altura na ordem inversa da digitada
