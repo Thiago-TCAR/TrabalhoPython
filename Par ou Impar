@@ -1,0 +1,6 @@
+numero = int(input("Digite um numero inteito: ")) #entrada de numero inteiro
+
+if numero % 2 == 0:
+    print(f"{numero} e par") #Dado o numero de entrada. realiiza a diviisao por 2. Resultado zero e par
+if numero % 2 == 1:
+    print(f"{numero} e impar") #Resultado da divisao e 1. Resultado impar
