@@ -1,0 +1,13 @@
+nome = input("Digite seu nome: ")
+sexo = input("Digite M ou F para informar o sexo: ")
+altura = float(input(f"olá {nome}, qual a sua altura? ")) #ate aqui foram pegos as infoamcoes de nome, sexo e altuta para a realização do peso ideal de forma correta
+
+peso_ideal_M = (72.7 * float(altura)) - 58 #Formula para calculo de peso ideal masculino. 
+peso_ideal_F = (62.1 * float(altura)) - 44.7 #formula para calculo de peso ideal feminino
+
+if sexo == "M" or "m":
+    print("Seu peso ideal e %.2f " %peso_ideal_M+"kg") #Condiçaõ para usuario homem mostrando seu peso ideal atraves da formula
+elif sexo == "F" or "f":
+    print("Seu peso ideal e %.2f " %peso_ideal_F+"kg") #Condiçaõ para usuario mulher mostrando seu peso ideal atraves da formula
+else:
+    print("Sexo invalido") #Condição para usuario q nao informar corretamente seu sexo
