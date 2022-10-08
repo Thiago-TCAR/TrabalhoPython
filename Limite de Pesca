@@ -1,0 +1,8 @@
+peso = float(input("Informe a quantidade de kg de peixes pescados hoje: ")) #entrada dos kg pescados
+
+if peso > 50: #condição para saber se ultrapassou o limite diario de 50kg
+    excesso = peso - 50 #saber quantos kg foram ultrapassados
+    multa = (peso - 50) * 4 #Saber o valor da multa de acordo com os kg excedente
+    print("Por exeder o limite de pesca em %.0fkg você pagara R$ %.2f de multa" %(excesso, multa)) #Mostra as infomacoes caso tenha ultrapassado o limite
+else:
+    print("Você não ultrapassou o limite de peso. Parabéns!") #condição caso nao tenha ultrapassado o limite
