@@ -25,4 +25,4 @@ if valor >= 10 and valor <= 600: #Condição para saber se o valor solicitado e 
 
 else:
     print("O valor solicitado não e permitido") #Condiçao caso o valor solicitacao nao seja permitido
-    # testando git blablabla
+    
