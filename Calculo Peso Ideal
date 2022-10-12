@@ -11,3 +11,4 @@ elif sexo == "F" or "f":
     print("Seu peso ideal e %.2f " %peso_ideal_F+"kg") #Condiçaõ para usuario mulher mostrando seu peso ideal atraves da formula
 else:
     print("Sexo invalido") #Condição para usuario q nao informar corretamente seu sexo
+    #teste
